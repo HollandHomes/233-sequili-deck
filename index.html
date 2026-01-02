@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Renovation Proposal - Holland Family Home Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        canvas {
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            background-color: #f9fafb;
+            cursor: crosshair;
+        }
+        .appendix-section {
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 700;
+            background-color: #f3f4f6;
+            border-top: 1px solid #d1d5db;
+        }
+        .schedule-list dt {
+            font-weight: 600;
+            background-color: #f3f4f6;
+            padding: 8px 12px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .schedule-list dd {
+            padding: 8px 12px 12px 12px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+        }
+        .phase-header {
+            background-color: #d1fae5; 
+            font-weight: 700;
+            padding: 10px 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @media print {
+            body { background-color: white; }
+            #proposal-content { box-shadow: none; padding: 0; }
+            button { display: none; }
+            .no-print { display: none; }
+            .hidden-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-10">
+
+    <div id="proposal-content" class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-6 sm:p-10">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Holland Family Home Services, Inc.</h1>
+            <p class="text-md sm:text-lg text-gray-600 mt-2">70 Copperhead Trail, Murphy, NC • 828-541-2442 • TheHollandSeven@gmail.com</p>
+            <hr class="my-6 border-gray-300">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700">PROPOSAL: DECK & RAIL RENOVATION</h2>
+        </header>
+
+        <section class="prose max-w-none text-gray-700">
+            <p class="mb-2"><strong>Project Location:</strong> 233 Soquili Trail, Jasper, GA 30143</p>
+            <p class="mb-6"><strong>Date of Issue:</strong> January 2, 2026</p>
+
+            <!-- CONCISE SUMMARY SECTION -->
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Project Summary</h3>
+            <p class="mb-6">This proposal outlines the complete renovation of the <strong>744 sq. ft. rear deck and staircases</strong>. The project prioritizes structural longevity using our <strong>"No Splice" Guarantee</strong> (installing full-length 16' and 12' boards only) and upgrades the stairs to heavy-duty 2x12 lumber. Two options are presented below: Decking Replacement Only or the recommended Full Renovation (Deck + Railing).</p>
+        </section>
+
+        <div class="space-y-6">
+            <!-- OPTION A: BASE PROJECT -->
+            <div class="p-5 bg-gray-50 rounded-lg shadow-sm border-2 border-indigo-200">
+                <label class="flex items-start cursor-pointer">
+                    <!-- Base Price adjusted to $10,350 to cover 5% referral fee internal cost -->
+                    <input type="checkbox" checked data-price="10350.00" id="option-deck" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">Option A: Decking & Stair Replacement (Base)</span>
+                        <p class="text-gray-600 mt-1 text-sm sm:text-base">
+                            Removal of all existing decking and stairs. Installation of new 5/4x6 Pressure Treated Pine (Full Length Boards) and Heavy Duty 2x12 Stair Treads. <br>
+                            <em>*Note: This option requires notching new boards to fit around the existing painted railing, which will remain in place.</em>
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">$10,350.00</span>
+                    </span>
+                </label>
+            </div>
+            
+            <!-- OPTION B: RAILING UPGRADE -->
+            <div class="p-5 bg-gray-50 rounded-lg shadow-sm border-2 border-green-200">
+                <label class="flex items-start cursor-pointer">
+                    <!-- Upgrade Price set to $2,850 to reach Total of $13,200 (Includes 20% Overhead + 5% Referral) -->
+                    <input type="checkbox" data-price="2850.00" id="option-rails" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">Option B: Railing Replacement Upgrade (Highly Recommended)</span>
+                        <p class="text-gray-600 mt-1 text-sm sm:text-base">
+                            Removal of unsafe/bending rails. Installation of new Pressure Treated 4x4 posts, 2x4 rails, <strong>5/4 matching top cap (Cocktail Rail)</strong>, and pre-cut pickets. <br>
+                            <em>*Benefits: Eliminates board notching for waterproof integrity, corrects structural sway, and provides a uniform new appearance.</em>
+                        </p>
+                        <span class="text-xl font-bold text-green-700 mt-2 block">+ $2,850.00</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <section class="prose max-w-none text-gray-700 mt-10">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Total Quote Summary</h3>
+        </section>
+
+        <div class="mt-6 p-6 bg-indigo-50 rounded-lg shadow-md">
+            
+            <!-- Credit Card Toggle -->
+            <div class="mb-4 flex items-center justify-end border-b border-indigo-200 pb-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" id="use-credit-card" class="h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500">
+                    <span class="ml-2 text-sm font-medium text-gray-700">Pay with Credit Card (Adds 4% Bank Fee)</span>
+                </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+                <div>
+                    <h4 class="text-xl font-bold text-indigo-800 mb-1 sm:mb-0">Total Contract Price:</h4>
+                    <p id="fee-notice" class="text-xs text-indigo-600 hidden">(Includes 4% CC Processing Fee)</p>
+                </div>
+                <!-- Default total starts at 10350 -->
+                <span id="total-price" class="text-3xl font-extrabold text-indigo-800">$10,350.00</span>
+            </div>
+        </div>
+
+        <section class="prose max-w-none text-gray-700 mt-8">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Proposal Acceptance & Payment Schedule</h3>
+            <p class="mb-3">The undersigned agrees to the scope of work and pricing for the <strong>checked items only</strong>. A signed copy of this document and the initial payment is required to schedule and begin work.</p>
+            
+            <p class="mb-6 font-semibold">The total contract price (calculated above) is split into two payments:</p>
+
+            <ul class="list-disc list-inside ml-4 space-y-2">
+                <!-- 50% Deposit -->
+                <li><strong>Deposit (50%):</strong> $<span id="payment-1-amount">5,175.00</span> Due upon signing to order materials and reserve dumpster.</li>
+                <!-- 50% Final -->
+                <li><strong>Final Payment (50%):</strong> $<span id="payment-2-amount">5,175.00</span> Due upon substantial completion of work.</li>
+            </ul>
+
+            <!-- ADDED: Payment Terms & Validity -->
+            <div class="mt-4 p-4 bg-gray-50 rounded text-sm text-gray-600 border border-gray-200">
+                <p><strong>Payment Methods:</strong> Check, Cash, or Bank Transfer preferred. Credit Card payments are accepted with a <strong>4% processing fee</strong> added to the total.</p>
+                <p class="mt-2"><strong>Proposal Validity:</strong> Due to fluctuating lumber prices, this proposal is valid for <strong>15 days</strong> from the Date of Issue.</p>
+            </div>
+            
+            <div class="mt-8 grid sm:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-2"><strong>Total Project Duration:</strong> 5 Working Days</p>
+                    <p class="mb-2"><strong>Anticipated Start Date:</strong> _________________</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-8">
+            <div>
+                <label for="client-name" class="block text-sm font-medium text-gray-700">Client Name</label>
+                <input type="text" id="client-name" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                <input type="date" id="date" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <label for="signature-pad" class="block text-sm font-medium text-gray-700">Client Signature</label>
+            <canvas id="signature-pad" width="400" height="150" class="mt-1 w-full sm:w-[400px]"></canvas>
+            <div class="mt-2 sm:w-[400px] text-right">
+                <button onclick="clearSignature()" class="text-sm text-gray-500 hover:text-gray-700 underline">Clear Signature</button>
+            </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t-2 border-dashed border-gray-300 no-print">
+            <div class="p-4 rounded-lg bg-gray-50 text-gray-700 text-sm">
+                <p class="mb-2 font-semibold">To complete and return this proposal:</p>
+                <ol class="list-decimal list-inside space-y-1">
+                    <li>Select your Options above (Option B is recommended).</li>
+                    <li>Check "Pay with Credit Card" if applicable (adds 4% fee).</li>
+                    <li>Sign the document using the signature pad above.</li>
+                    <li>Click the button below to open the print dialog.</li>
+                    <li>In the print dialog, select "Save as PDF" to save a digital copy.</li>
+                    <li>Email the PDF to <strong>TheHollandSeven@gmail.com</strong></li>
+                </ol>
+            </div>
+            
+            <div class="mt-6 flex justify-center space-x-4">
+                <button onclick="window.print()" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors">
+                    Save as PDF / Print
+                </button>
+            </div>
+        </div>
+        
+        <!-- ADDENDUM SECTION -->
+        <div class="mt-12 pt-6 border-t border-gray-300 page-break">
+             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4 text-center">ADDENDUM: DETAILED SPECS & EXCLUSIONS</h3>
+             <hr class="my-4 border-gray-300">
+
+            <h4 class="text-lg font-semibold mt-6 mb-2">Appendix 1: Material Specs & General Exclusions</h4>
+            
+            <ul class="list-disc list-inside ml-4 space-y-2 text-sm text-gray-700">
+                <li><strong>No Splice Decking:</strong> We utilize 16' and 12' 5/4" Pressure Treated Pine boards to cover the main spans without butt-joints.</li>
+                <li><strong>Heavy Duty Stairs:</strong> Treads are upgraded to <strong>2x12 Pressure Treated Lumber</strong> (Solid 1.5" thickness) for zero flex, with 2x6 closed risers.</li>
+                <li><strong>Railing Cap:</strong> Top rail utilizes 5/4" decking material to perfectly match the floor surface ("Cocktail Rail").</li>
+                <li><strong>Fasteners:</strong> Installation via pneumatic gun using <strong>2-3/8" Hot-Dipped Galvanized Ring-Shank Nails</strong>. Structural connections utilize TimberLOK/LedgerLOK screws.</li>
+                <li><strong>Logistics & Disposal:</strong> Price includes all material delivery fees and a 20-Yard Roll-Off Dumpster for legal disposal of painted debris ($600 value included).</li>
+                
+                <!-- Specific Exclusions List -->
+                <li class="mt-2"><strong>Standard Exclusions:</strong>
+                    <ul class="list-circle list-inside ml-6 text-gray-600">
+                        <li><strong>Permits:</strong> Building permit fees (if required by Pickens County) are not included and will be billed at cost.</li>
+                        <li><strong>Electrical:</strong> Moving, disconnecting, or reconnecting exterior lighting or outlets is not included.</li>
+                        <li><strong>Gate:</strong> Quote includes re-hanging the <em>existing</em> gate. Fabrication of a new matching gate is not included.</li>
+                    </ul>
+                </li>
+
+                <li class="font-bold text-red-700 bg-red-50 p-1 rounded mt-2"><strong>STAINING/PAINTING NOTICE:</strong> This proposal covers the installation of unfinished pressure-treated lumber only. Painting or staining is NOT included. New pressure-treated wood must be allowed to dry for a minimum of 6 months (Summer 2026) before any finish is applied.</li>
+            </ul>
+
+            <h4 id="schedule-title" class="text-lg font-semibold mt-6 mb-2">Appendix 2: Schedule</h4>
+            
+            <!-- Schedule A (Deck Only) - Hidden by default if Option B is checked initially -->
+            <div id="schedule-a" class="mt-4 border border-gray-200 rounded-lg overflow-hidden hidden">
+                 <div class="bg-gray-100 p-3 text-sm font-semibold text-center border-b border-gray-200">Schedule for Option A (Deck Only)</div>
+                <dl class="schedule-list">
+                    <dt class="phase-header">PHASE 1: DEMOLITION & PREP</dt>
+                    <dt><strong>Day 1 (Demo)</strong></dt>
+                    <dd>Site setup and dumpster delivery. Remove decking/stairs. <span class="text-red-700 font-semibold">Slow demo required</span> to carefully work around existing railing posts.</dd>
+                    
+                    <dt><strong>Day 2 (Deck Installation)</strong></dt>
+                    <dd>Begin installation of new 5/4 decking. <span class="text-red-700 font-semibold">Includes detailed scribing/notching</span> of boards around existing 4x4 posts.</dd>
+                    
+                    <dt class="phase-header">PHASE 2: STAIRS & COMPLETION</dt>
+                    <dt><strong>Day 3 (Stair Construction)</strong></dt>
+                    <dd>Install heavy-duty 2x12 treads and 2x6 risers on both staircases.</dd>
+                    
+                    <dt><strong>Day 4 (Finish Work)</strong></dt>
+                    <dd>Complete detailed cutting around remaining posts. Re-secure existing railing where necessary.</dd>
+                    
+                    <dt><strong>Day 5 (Cleanup)</strong></dt>
+                    <dd>Final cleanup, magnetic sweep, and site reset.</dd>
+                </dl>
+            </div>
+
+            <!-- Schedule B (Deck + Rails) - Shown by default -->
+            <div id="schedule-b" class="mt-4 border border-gray-200 rounded-lg overflow-hidden">
+                <div class="bg-green-100 p-3 text-sm font-semibold text-center border-b border-green-200">Schedule for Option B (Full Renovation)</div>
+                <dl class="schedule-list">
+                    <dt class="phase-header">PHASE 1: DEMOLITION & DECKING</dt>
+                    <dt><strong>Day 1 (Demo)</strong></dt>
+                    <dd>Site setup and dumpster delivery. Remove all decking, railing, and stair treads (Full Strip). De-nail joists.</dd>
+                    
+                    <dt><strong>Day 2 (Deck Installation)</strong></dt>
+                    <dd>Install new 5/4 Pressure Treated Pine decking. Fast installation (No notching required).</dd>
+                    
+                    <dt class="phase-header">PHASE 2: STAIRS & RAILINGS</dt>
+                    <dt><strong>Day 3 (Stair Construction)</strong></dt>
+                    <dd>Install heavy-duty 2x12 treads and 2x6 risers on both staircases.</dd>
+                    
+                    <dt><strong>Day 4 (Railing Frame)</strong></dt>
+                    <dd>Install and plumb new 4x4 posts. Install top and bottom 2x4 rails using structural screws.</dd>
+                    
+                    <dt><strong>Day 5 (Finish)</strong></dt>
+                    <dd>Install pre-cut pickets and <strong>matching 5/4 top cap</strong>. Final magnetic sweep of grounds and furniture reset.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][id^="option-"]');
+        const ccCheckbox = document.getElementById('use-credit-card');
+        const totalPriceEl = document.getElementById('total-price');
+        const railOptionEl = document.getElementById('option-rails');
+        const feeNoticeEl = document.getElementById('fee-notice');
+        const scheduleA = document.getElementById('schedule-a');
+        const scheduleB = document.getElementById('schedule-b');
+        const scheduleTitle = document.getElementById('schedule-title');
+        
+        // Target elements for payment amounts
+        const payment1El = document.getElementById('payment-1-amount');
+        const payment2El = document.getElementById('payment-2-amount');
+
+        // Payment percentages
+        const P1 = 0.50;
+        const P2 = 0.50;
+        
+        // CC Fee
+        const CC_FEE = 0.04;
+
+        function updateProposal() {
+            let subtotal = 0;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    subtotal += parseFloat(checkbox.dataset.price);
+                }
+            });
+            
+            // Check Credit Card Logic
+            let total = subtotal;
+            if (ccCheckbox.checked) {
+                total = subtotal * (1 + CC_FEE);
+                feeNoticeEl.classList.remove('hidden');
+            } else {
+                feeNoticeEl.classList.add('hidden');
+            }
+            
+            // Format with commas for thousands
+            const formattedTotal = total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            totalPriceEl.textContent = `$${formattedTotal}`;
+
+            // Update payment schedule amounts
+            const deposit = total * P1;
+            const final = total * P2;
+            
+            payment1El.textContent = deposit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            payment2El.textContent = final.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+            // Toggle Schedule Display based on Option B (Rails)
+            if (railOptionEl.checked) {
+                // Show Schedule B, Hide A
+                scheduleB.classList.remove('hidden');
+                scheduleA.classList.add('hidden');
+                scheduleTitle.textContent = "Appendix 2: Schedule for Full Renovation (Option B)";
+            } else {
+                // Show Schedule A, Hide B
+                scheduleB.classList.add('hidden');
+                scheduleA.classList.remove('hidden');
+                scheduleTitle.textContent = "Appendix 2: Schedule for Deck Replacement Only (Option A)";
+            }
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProposal);
+        });
+        
+        ccCheckbox.addEventListener('change', updateProposal);
+
+        // Initial update on page load
+        updateProposal();
+        
+        // --- Signature Pad Logic ---
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        let drawing = false;
+
+        // Correctly handle canvas scaling on high DPI screens
+        function resizeCanvas() {
+            const ratio = Math.max(window.devicePixelRatio || 1, 1);
+            // Cache current drawing if needed, but here we just reset for simplicity or fix dimensions
+            // For simple usage:
+            canvas.width = canvas.offsetWidth * ratio;
+            canvas.height = canvas.offsetHeight * ratio;
+            ctx.scale(ratio, ratio);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        // Initial call
+        setTimeout(resizeCanvas, 100);
+
+        function getMousePos(canvas, evt) {
+            const rect = canvas.getBoundingClientRect();
+            // Handle touch vs mouse
+            const clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
+            const clientY = evt.touches ? evt.touches[0].clientY : evt.clientY;
+            
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDrawing(e) {
+            drawing = true;
+            const pos = getMousePos(canvas, e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 2;
+            if (e.type !== 'mousedown') {
+               // Prevent scrolling on touch
+            }
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+            const pos = getMousePos(canvas, e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+            e.preventDefault();
+        }
+
+        function stopDrawing() {
+            drawing = false;
+        }
+        
+        // Mouse events
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mousemove', draw);
+        // Mouse leave stops drawing
+        canvas.addEventListener('mouseleave', stopDrawing);
+
+        // Touch events for mobile
+        canvas.addEventListener('touchstart', (e) => {
+             // For signature pads, usually preventDefault to stop scroll while signing.
+             if(e.target === canvas) {
+                 e.preventDefault();
+                 startDrawing(e);
+             }
+        }, {passive: false});
+        
+        canvas.addEventListener('touchend', stopDrawing);
+        
+        canvas.addEventListener('touchmove', (e) => {
+            if(e.target === canvas) {
+                e.preventDefault();
+                draw(e);
+            }
+        }, {passive: false});
+        
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath(); // Reset path
+        }
+
+    </script>
+</body>
+</html>
