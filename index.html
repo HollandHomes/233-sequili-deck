@@ -69,20 +69,22 @@
 
             <!-- CONCISE SUMMARY SECTION -->
             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Project Summary</h3>
-            <p class="mb-6">This proposal outlines the complete renovation of the <strong>744 sq. ft. rear deck and staircases</strong>. The project prioritizes structural longevity using our <strong>"No Splice" Guarantee</strong> (installing full-length 16' and 12' boards only) and upgrades the stairs to heavy-duty 2x12 lumber. Options are presented below for Railing and Premium Material upgrades.</p>
+            <p class="mb-6">This proposal outlines the complete renovation of the <strong>744 sq. ft. rear deck and staircases</strong>. We are presenting two distinct material paths: a <strong>Pressure Treated Wood Renovation</strong> (with our "No Splice" guarantee) or a <strong>Platinum Trex Composite Renovation</strong> for a maintenance-free finish.</p>
         </section>
 
-        <div class="space-y-6">
+        <!-- WOOD OPTIONS SECTION -->
+        <div id="wood-options-container" class="space-y-6">
+            <h4 class="text-lg font-bold text-gray-800 border-b border-gray-300 pb-2">Path 1: Pressure Treated Wood</h4>
+            
             <!-- OPTION A: BASE PROJECT -->
             <div class="p-5 bg-gray-50 rounded-lg shadow-sm border-2 border-indigo-200">
                 <label class="flex items-start cursor-pointer">
-                    <!-- Base Price adjusted to $10,350 to cover 5% referral fee internal cost -->
-                    <input type="checkbox" checked data-price="10350.00" id="option-deck" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer">
+                    <input type="checkbox" checked data-price="10350.00" id="option-deck" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer wood-option">
                     <span class="ml-4 flex-1 text-base">
                         <span class="text-lg font-semibold text-gray-900 block">Option A: Decking & Stair Replacement (Base)</span>
                         <p class="text-gray-600 mt-1 text-sm sm:text-base">
                             Removal of all existing decking and stairs. Installation of new 5/4x6 Pressure Treated Pine (Full Length Boards) and Heavy Duty 2x12 Stair Treads. <br>
-                            <em>*Note: This option requires notching new boards to fit around the existing painted railing, which will remain in place.</em>
+                            <em>*Note: Requires notching new boards to fit around existing railing.</em>
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">$10,350.00</span>
                     </span>
@@ -92,13 +94,11 @@
             <!-- OPTION B: RAILING UPGRADE -->
             <div class="p-5 bg-gray-50 rounded-lg shadow-sm border-2 border-green-200">
                 <label class="flex items-start cursor-pointer">
-                    <!-- Upgrade Price set to $2,850 to reach Total of $13,200 (Includes 20% Overhead + 5% Referral) -->
-                    <input type="checkbox" data-price="2850.00" id="option-rails" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer">
+                    <input type="checkbox" data-price="2850.00" id="option-rails" class="mt-1 h-6 w-6 text-indigo-600 rounded focus:ring-indigo-500 cursor-pointer wood-option">
                     <span class="ml-4 flex-1 text-base">
                         <span class="text-lg font-semibold text-gray-900 block">Option B: Railing Replacement Upgrade (Highly Recommended)</span>
                         <p class="text-gray-600 mt-1 text-sm sm:text-base">
-                            Removal of unsafe/bending rails. Installation of new Pressure Treated 4x4 posts, 2x4 rails, <strong>5/4 matching top cap (Cocktail Rail)</strong>, and pre-cut pickets. <br>
-                            <em>*Benefits: Eliminates board notching for waterproof integrity, corrects structural sway, and provides a uniform new appearance.</em>
+                            Removal of unsafe rails. Installation of new Pressure Treated 4x4 posts, 2x4 rails, 5/4 top cap, and pre-cut pickets.
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">+ $2,850.00</span>
                     </span>
@@ -108,15 +108,34 @@
             <!-- OPTION C: PREMIUM LUMBER UPGRADE -->
             <div class="p-5 bg-gray-50 rounded-lg shadow-sm border-2 border-amber-200">
                 <label class="flex items-start cursor-pointer">
-                    <!-- Premium Lumber Upcharge: ~$5 per board * 240 pieces = $1200 -->
-                    <input type="checkbox" data-price="1200.00" id="option-premium" class="mt-1 h-6 w-6 text-amber-600 rounded focus:ring-amber-500 cursor-pointer">
+                    <input type="checkbox" data-price="1200.00" id="option-premium" class="mt-1 h-6 w-6 text-amber-600 rounded focus:ring-amber-500 cursor-pointer wood-option">
                     <span class="ml-4 flex-1 text-base">
                         <span class="text-lg font-semibold text-gray-900 block">Option C: Premium Lumber Upgrade</span>
                         <p class="text-gray-600 mt-1 text-sm sm:text-base">
-                            Upgrade all main decking boards, stair treads, and structural 2x framing lumber to <strong>Premium/Select Grade</strong> (fewer knots, better visual appearance). <br>
-                            <em>*Excludes railing balusters/pickets.</em>
+                            Upgrade decking and framing lumber to <strong>Premium/Select Grade</strong> (fewer knots/defects).
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">+ $1,200.00</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+
+        <!-- TREX OPTION SECTION -->
+        <div id="trex-container" class="mt-8 space-y-6">
+            <h4 class="text-lg font-bold text-gray-800 border-b border-gray-300 pb-2">Path 2: Composite (Maintenance Free)</h4>
+            
+            <!-- OPTION D: TREX PLATINUM -->
+            <div class="p-5 bg-slate-800 text-white rounded-lg shadow-lg border-2 border-slate-600">
+                <label class="flex items-start cursor-pointer">
+                    <!-- Trex Price: $33,250 -->
+                    <input type="checkbox" data-price="33250.00" id="option-trex" class="mt-1 h-6 w-6 text-blue-400 rounded focus:ring-blue-500 cursor-pointer">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold block text-blue-200">Option D: Trex Enhance® Composite Renovation</span>
+                        <p class="text-gray-300 mt-1 text-sm sm:text-base">
+                            Complete renovation using <strong>Trex Enhance® (Clam Shell)</strong> decking and <strong>Trex Enhance® White Railing</strong>. Includes full joist tape protection, supplemental stringers for support, and hidden fasteners. 
+                            <br><em class="text-yellow-400 font-semibold">*Zero maintenance, no painting/staining required.</em>
+                        </p>
+                        <span class="text-2xl font-bold text-blue-300 mt-2 block">$33,250.00</span>
                     </span>
                 </label>
             </div>
@@ -154,20 +173,20 @@
 
             <ul class="list-disc list-inside ml-4 space-y-2">
                 <!-- 50% Deposit -->
-                <li><strong>Deposit (50%):</strong> $<span id="payment-1-amount">5,175.00</span> Due upon signing to order materials and reserve dumpster.</li>
+                <li><strong>Deposit (50%):</strong> $<span id="payment-1-amount">5,175.00</span> Due upon signing.</li>
                 <!-- 50% Final -->
-                <li><strong>Final Payment (50%):</strong> $<span id="payment-2-amount">5,175.00</span> Due upon substantial completion of work.</li>
+                <li><strong>Final Payment (50%):</strong> $<span id="payment-2-amount">5,175.00</span> Due upon substantial completion.</li>
             </ul>
 
-            <!-- ADDED: Payment Terms & Validity -->
+            <!-- Payment Terms -->
             <div class="mt-4 p-4 bg-gray-50 rounded text-sm text-gray-600 border border-gray-200">
-                <p><strong>Payment Methods:</strong> Check, Cash, or Bank Transfer preferred. Credit Card payments are accepted with a <strong>4% processing fee</strong> added to the total.</p>
-                <p class="mt-2"><strong>Proposal Validity:</strong> Due to fluctuating lumber prices, this proposal is valid for <strong>15 days</strong> from the Date of Issue.</p>
+                <p><strong>Payment Methods:</strong> Check, Cash, or Bank Transfer preferred. Credit Card payments accepted with a <strong>4% fee</strong>.</p>
+                <p class="mt-2"><strong>Proposal Validity:</strong> 15 Days from Date of Issue.</p>
             </div>
             
             <div class="mt-8 grid sm:grid-cols-2 gap-8">
                 <div>
-                    <p class="mb-2"><strong>Total Project Duration:</strong> 5 Working Days</p>
+                    <p class="mb-2"><strong>Total Project Duration:</strong> <span id="project-duration">5 Working Days</span></p>
                     <p class="mb-2"><strong>Anticipated Start Date:</strong> _________________</p>
                 </div>
             </div>
@@ -196,13 +215,11 @@
             <div class="p-4 rounded-lg bg-gray-50 text-gray-700 text-sm">
                 <p class="mb-2 font-semibold">To complete and return this proposal:</p>
                 <ol class="list-decimal list-inside space-y-1">
-                    <li>Select your Options above (Option B is recommended).</li>
-                    <li>Select Premium Lumber (Option C) if desired.</li>
-                    <li>Check "Pay with Credit Card" if applicable (adds 4% fee).</li>
-                    <li>Sign the document using the signature pad above.</li>
-                    <li>Click the button below to open the print dialog.</li>
-                    <li>In the print dialog, select "Save as PDF" to save a digital copy.</li>
-                    <li>Email the PDF to <strong>TheHollandSeven@gmail.com</strong></li>
+                    <li>Select your Option (Wood or Trex).</li>
+                    <li>Check "Pay with Credit Card" if applicable.</li>
+                    <li>Sign using the signature pad.</li>
+                    <li>Print to PDF using the button below.</li>
+                    <li>Email PDF to <strong>TheHollandSeven@gmail.com</strong></li>
                 </ol>
             </div>
             
@@ -239,84 +256,86 @@
                 <li class="font-bold text-red-700 bg-red-50 p-1 rounded mt-2"><strong>STAINING/PAINTING NOTICE:</strong> This proposal covers the installation of unfinished pressure-treated lumber only. Painting or staining is NOT included. New pressure-treated wood must be allowed to dry for a minimum of 6 months (Summer 2026) before any finish is applied.</li>
             </ul>
 
-            <h4 id="schedule-title" class="text-lg font-semibold mt-6 mb-2">Appendix 2: Schedule</h4>
+            <h4 class="text-lg font-semibold mt-6 mb-2">Appendix 2: Material Specs (Trex Option)</h4>
+            <ul class="list-disc list-inside ml-4 space-y-2 text-sm text-gray-700">
+                <li><strong>Decking:</strong> Trex Enhance® Basics (Clam Shell). Includes <strong>Square Edge boards</strong> for professional "Picture Frame" borders and stair nosing.</li>
+                <li><strong>Railing & Trim:</strong> Trex Enhance® Railing Kits (White). Includes <strong>matching White Composite Fascia</strong> on all stair risers and rim joists for a fully maintenance-free exterior.</li>
+                <li><strong>Protection:</strong> Trex Protect® Joist Tape applied to all joists and beams.</li>
+                <li><strong>Structure:</strong> Supplemental Stringers added to existing stairs for additional support.</li>
+                <li><strong>Fasteners:</strong> Trex Hidden Fasteners & Start Clips (Screw installation).</li>
+            </ul>
+
+            <h4 id="schedule-title" class="text-lg font-semibold mt-6 mb-2">Appendix 3: Schedule</h4>
             
-            <!-- Schedule A (Deck Only) - Hidden by default if Option B is checked initially -->
-            <div id="schedule-a" class="mt-4 border border-gray-200 rounded-lg overflow-hidden hidden">
-                 <div class="bg-gray-100 p-3 text-sm font-semibold text-center border-b border-gray-200">Schedule for Option A (Deck Only)</div>
+            <!-- Schedule A (Wood) -->
+            <div id="schedule-wood" class="mt-4 border border-gray-200 rounded-lg overflow-hidden">
+                 <div class="bg-gray-100 p-3 text-sm font-semibold text-center border-b border-gray-200">Schedule for Wood Renovation (5 Days)</div>
                 <dl class="schedule-list">
-                    <dt class="phase-header">PHASE 1: DEMOLITION & PREP</dt>
-                    <dt><strong>Day 1 (Demo)</strong></dt>
-                    <dd>Site setup and dumpster delivery. Remove decking/stairs. <span class="text-red-700 font-semibold">Slow demo required</span> to carefully work around existing railing posts.</dd>
-                    
-                    <dt><strong>Day 2 (Deck Installation)</strong></dt>
-                    <dd>Begin installation of new 5/4 decking. <span class="text-red-700 font-semibold">Includes detailed scribing/notching</span> of boards around existing 4x4 posts.</dd>
-                    
-                    <dt class="phase-header">PHASE 2: STAIRS & COMPLETION</dt>
-                    <dt><strong>Day 3 (Stair Construction)</strong></dt>
-                    <dd>Install heavy-duty 2x12 treads and 2x6 risers on both staircases.</dd>
-                    
-                    <dt><strong>Day 4 (Finish Work)</strong></dt>
-                    <dd>Complete detailed cutting around remaining posts. Re-secure existing railing where necessary.</dd>
-                    
-                    <dt><strong>Day 5 (Cleanup)</strong></dt>
-                    <dd>Final cleanup, magnetic sweep, and site reset.</dd>
+                    <dt><strong>Days 1-2:</strong> Demo & Decking Installation.</dt>
+                    <dt><strong>Day 3:</strong> Stair Construction.</dt>
+                    <dt><strong>Days 4-5:</strong> Railing & Finish.</dt>
                 </dl>
             </div>
 
-            <!-- Schedule B (Deck + Rails) - Shown by default -->
-            <div id="schedule-b" class="mt-4 border border-gray-200 rounded-lg overflow-hidden">
-                <div class="bg-green-100 p-3 text-sm font-semibold text-center border-b border-green-200">Schedule for Option B (Full Renovation)</div>
+            <!-- Schedule B (Trex) -->
+            <div id="schedule-trex" class="mt-4 border border-blue-200 rounded-lg overflow-hidden hidden">
+                <div class="bg-blue-100 p-3 text-sm font-semibold text-center border-b border-blue-200">Schedule for Trex Renovation (12 Days)</div>
                 <dl class="schedule-list">
-                    <dt class="phase-header">PHASE 1: DEMOLITION & DECKING</dt>
-                    <dt><strong>Day 1 (Demo)</strong></dt>
-                    <dd>Site setup and dumpster delivery. Remove all decking, railing, and stair treads (Full Strip). De-nail joists.</dd>
-                    
-                    <dt><strong>Day 2 (Deck Installation)</strong></dt>
-                    <dd>Install new 5/4 Pressure Treated Pine decking. Fast installation (No notching required).</dd>
-                    
-                    <dt class="phase-header">PHASE 2: STAIRS & RAILINGS</dt>
-                    <dt><strong>Day 3 (Stair Construction)</strong></dt>
-                    <dd>Install heavy-duty 2x12 treads and 2x6 risers on both staircases.</dd>
-                    
-                    <dt><strong>Day 4 (Railing Frame)</strong></dt>
-                    <dd>Install and plumb new 4x4 posts. Install top and bottom 2x4 rails using structural screws.</dd>
-                    
-                    <dt><strong>Day 5 (Finish)</strong></dt>
-                    <dd>Install pre-cut pickets and <strong>matching 5/4 top cap</strong>. Final magnetic sweep of grounds and furniture reset.</dd>
+                    <dt><strong>Days 1-2:</strong> Demo, Frame Prep, & Joist Taping.</dt>
+                    <dt><strong>Days 3-7:</strong> Trex Decking Installation (Precision Work with Hidden Fasteners).</dt>
+                    <dt><strong>Days 8-9:</strong> Stair Construction (Supplemental Stringers).</dt>
+                    <dt><strong>Days 10-12:</strong> Railing Kit Assembly & Final Detail.</dt>
                 </dl>
             </div>
         </div>
     </div>
 
     <script>
-        const checkboxes = document.querySelectorAll('input[type="checkbox"][id^="option-"]');
+        const woodOptions = document.querySelectorAll('.wood-option');
+        const trexOption = document.getElementById('option-trex');
         const ccCheckbox = document.getElementById('use-credit-card');
         const totalPriceEl = document.getElementById('total-price');
-        const railOptionEl = document.getElementById('option-rails');
         const feeNoticeEl = document.getElementById('fee-notice');
-        const scheduleA = document.getElementById('schedule-a');
-        const scheduleB = document.getElementById('schedule-b');
-        const scheduleTitle = document.getElementById('schedule-title');
         
-        // Target elements for payment amounts
+        const scheduleWood = document.getElementById('schedule-wood');
+        const scheduleTrex = document.getElementById('schedule-trex');
+        const durationText = document.getElementById('project-duration');
+
+        // Payment elements
         const payment1El = document.getElementById('payment-1-amount');
         const payment2El = document.getElementById('payment-2-amount');
 
-        // Payment percentages
         const P1 = 0.50;
         const P2 = 0.50;
-        
-        // CC Fee
         const CC_FEE = 0.04;
 
         function updateProposal() {
             let subtotal = 0;
-            checkboxes.forEach(checkbox => {
-                if (checkbox.checked) {
-                    subtotal += parseFloat(checkbox.dataset.price);
-                }
-            });
+            let isTrexSelected = trexOption.checked;
+
+            // Enforce Exclusivity logic
+            if (isTrexSelected) {
+                // If Trex is checked, uncheck all wood options but disable them visually? 
+                // Just calculating price based on Trex
+                subtotal = parseFloat(trexOption.dataset.price);
+                
+                // Show Trex Schedule
+                scheduleWood.classList.add('hidden');
+                scheduleTrex.classList.remove('hidden');
+                durationText.textContent = "12 Working Days";
+            } else {
+                // Calculate Wood Options
+                woodOptions.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        subtotal += parseFloat(checkbox.dataset.price);
+                    }
+                });
+                
+                // Show Wood Schedule
+                scheduleWood.classList.remove('hidden');
+                scheduleTrex.classList.add('hidden');
+                durationText.textContent = "5 Working Days";
+            }
             
             // Check Credit Card Logic
             let total = subtotal;
@@ -327,38 +346,35 @@
                 feeNoticeEl.classList.add('hidden');
             }
             
-            // Format with commas for thousands
             const formattedTotal = total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             totalPriceEl.textContent = `$${formattedTotal}`;
 
-            // Update payment schedule amounts
             const deposit = total * P1;
             const final = total * P2;
             
             payment1El.textContent = deposit.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
             payment2El.textContent = final.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-
-            // Toggle Schedule Display based on Option B (Rails)
-            if (railOptionEl.checked) {
-                // Show Schedule B, Hide A
-                scheduleB.classList.remove('hidden');
-                scheduleA.classList.add('hidden');
-                scheduleTitle.textContent = "Appendix 2: Schedule for Full Renovation (Option B)";
-            } else {
-                // Show Schedule A, Hide B
-                scheduleB.classList.add('hidden');
-                scheduleA.classList.remove('hidden');
-                scheduleTitle.textContent = "Appendix 2: Schedule for Deck Replacement Only (Option A)";
-            }
         }
 
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', updateProposal);
+        // Logic to handle exclusive checkboxes
+        trexOption.addEventListener('change', function() {
+            if (this.checked) {
+                woodOptions.forEach(opt => opt.checked = false);
+            }
+            updateProposal();
+        });
+
+        woodOptions.forEach(opt => {
+            opt.addEventListener('change', function() {
+                if (this.checked) {
+                    trexOption.checked = false;
+                }
+                updateProposal();
+            });
         });
         
         ccCheckbox.addEventListener('change', updateProposal);
 
-        // Initial update on page load
         updateProposal();
         
         // --- Signature Pad Logic ---
@@ -366,29 +382,20 @@
         const ctx = canvas.getContext('2d');
         let drawing = false;
 
-        // Correctly handle canvas scaling on high DPI screens
         function resizeCanvas() {
             const ratio = Math.max(window.devicePixelRatio || 1, 1);
-            // Cache current drawing if needed, but here we just reset for simplicity or fix dimensions
-            // For simple usage:
             canvas.width = canvas.offsetWidth * ratio;
             canvas.height = canvas.offsetHeight * ratio;
             ctx.scale(ratio, ratio);
         }
         window.addEventListener('resize', resizeCanvas);
-        // Initial call
         setTimeout(resizeCanvas, 100);
 
         function getMousePos(canvas, evt) {
             const rect = canvas.getBoundingClientRect();
-            // Handle touch vs mouse
             const clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
             const clientY = evt.touches ? evt.touches[0].clientY : evt.clientY;
-            
-            return {
-                x: clientX - rect.left,
-                y: clientY - rect.top
-            };
+            return { x: clientX - rect.left, y: clientY - rect.top };
         }
 
         function startDrawing(e) {
@@ -398,9 +405,6 @@
             ctx.moveTo(pos.x, pos.y);
             ctx.strokeStyle = '#000';
             ctx.lineWidth = 2;
-            if (e.type !== 'mousedown') {
-               // Prevent scrolling on touch
-            }
         }
 
         function draw(e) {
@@ -415,36 +419,18 @@
             drawing = false;
         }
         
-        // Mouse events
         canvas.addEventListener('mousedown', startDrawing);
         canvas.addEventListener('mouseup', stopDrawing);
         canvas.addEventListener('mousemove', draw);
-        // Mouse leave stops drawing
         canvas.addEventListener('mouseleave', stopDrawing);
-
-        // Touch events for mobile
-        canvas.addEventListener('touchstart', (e) => {
-             // For signature pads, usually preventDefault to stop scroll while signing.
-             if(e.target === canvas) {
-                 e.preventDefault();
-                 startDrawing(e);
-             }
-        }, {passive: false});
-        
+        canvas.addEventListener('touchstart', (e) => { if(e.target === canvas) { e.preventDefault(); startDrawing(e); } }, {passive: false});
         canvas.addEventListener('touchend', stopDrawing);
-        
-        canvas.addEventListener('touchmove', (e) => {
-            if(e.target === canvas) {
-                e.preventDefault();
-                draw(e);
-            }
-        }, {passive: false});
+        canvas.addEventListener('touchmove', (e) => { if(e.target === canvas) { e.preventDefault(); draw(e); } }, {passive: false});
         
         function clearSignature() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.beginPath(); // Reset path
+            ctx.beginPath();
         }
-
     </script>
 </body>
 </html>
